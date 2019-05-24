@@ -12,7 +12,7 @@ get_or_post '/' do
     sleep(2)
 		r.say(message: "Bonjour mon amie. Come onn up to our happy plaice")
     sleep(2)
-    r.play(digits: '9')
+    r.play(digits: 9)
 	end.to_s
 
 end
