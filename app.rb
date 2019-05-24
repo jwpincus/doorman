@@ -13,6 +13,7 @@ get_or_post '/' do
 		r.say(message: "Bonjour mon amie. Come onn up to our happy plaice")
     sleep(2)
     r.play(digits: '3w4w5')
+    r.say(message: 'digits sent')
 	end.to_s
 
 end
