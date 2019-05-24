@@ -9,9 +9,7 @@ end
 get_or_post '/' do
   
 	Twilio::TwiML::VoiceResponse.new do |r|
-    sleep(2)
 		r.say(message: "Bonjour mon amie. Come onn up to our happy plaice")
-    sleep(2)
     r.play(digits: '3w4w5')
     r.say(message: 'Ok')
 	end.to_s
