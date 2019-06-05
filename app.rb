@@ -9,11 +9,10 @@ end
 get_or_post '/' do
   
 	Twilio::TwiML::VoiceResponse.new do |r|
-		r.say(message: "Bonjour mon amie. Come onn up to our happy plaice")
+		r.say(message: "Come on up")
     r.pause(length: 1)
-    r.play(digits: '3w4w5')
+    r.play(digits: '6w6w6')
     r.pause(length: 1)
-    r.say(message: 'Ok')
 	end.to_s
 
 end
